@@ -39,4 +39,6 @@
 - Open link  <a href="https://simulator.sandbox.midtrans.com/bca/va/index" target="_blank">Test VA Bank Midtrans</a>
 - Enter VA number -> Inquire -> then pay for that.
 
+Test support: BCA, BNI, BRI.
+
 
