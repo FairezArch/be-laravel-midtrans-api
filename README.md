@@ -11,12 +11,12 @@
 
 - Run composer install.
 - Setup
-    DB_DATABASE=
-    DB_USERNAME=
-    DB_PASSWORD= 
-    MIDTRANS_MERCHAT_ID=
-    MIDTRANS_CLIENT_KEY=
-    MIDTRANS_SERVER_KEY=
+    DB_DATABASE,
+    DB_USERNAME,
+    DB_PASSWORD, 
+    MIDTRANS_MERCHAT_ID,
+    MIDTRANS_CLIENT_KEY,
+    MIDTRANS_SERVER_KEY,
 - Run php artisan migrate --seed.
 - Then run 'php artisan serve' | http:127.0.0.1:8000.
 
