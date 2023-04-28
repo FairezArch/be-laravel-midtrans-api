@@ -1,0 +1,175 @@
+{
+    "info": {
+        "name": "Collection API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Product",
+            "item": [
+                {
+                    "name": "Lists",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/product",
+                            "path": [
+                                "product"
+                            ],
+                            "host": [
+                                "{{base_url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Add",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{base_url}}/product",
+                            "path": [
+                                "product"
+                            ],
+                            "host": [
+                                "{{base_url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\": \"marjan\",\n  \"price\": 200000\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Show",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/product/1",
+                            "path": [
+                                "product",
+                                "1"
+                            ],
+                            "host": [
+                                "{{base_url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{base_url}}/product/1",
+                            "path": [
+                                "product",
+                                "1"
+                            ],
+                            "host": [
+                                "{{base_url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\": \"marjan cocopandan\",\n  \"price\": 250000\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{base_url}}/product/1",
+                            "path": [
+                                "product",
+                                "1"
+                            ],
+                            "host": [
+                                "{{base_url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VA Midtrans",
+            "item": [
+                {
+                    "name": "Order Product",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{base_url}}/transaction",
+                            "path": [
+                                "transaction"
+                            ],
+                            "host": [
+                                "{{base_url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"user_id\": 1,\n  \"products\": [\n    {\n      \"id\": 2,\n      \"qty\": 10\n    },\n    {\n      \"id\": 3,\n      \"qty\": 15\n    }\n  ],\n  \"bank\": \"bca\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
