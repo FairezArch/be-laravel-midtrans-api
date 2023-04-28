@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\HandleNotificationController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::post('/midtrans/web-notif-hook', [HandleNotificationController::class, 'notificationComming']);
+Route::post('/transaction', [OrderController::class, 'store'])->name('transaction.store');
+Route::apiResource('/product', ProductController::class);
