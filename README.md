@@ -31,7 +31,7 @@
 
 ## Setup Hook Midtrans
 - Install ngrok | <a href="https://ngrok.com/download" target="_blank">Download Ngrok</a>
-- After finis install, open terminal then enter 'ngrok http 8000'
+- After finish install, open terminal then enter 'ngrok http 8000'
 - Open midtrans dashboard, then open menu settings -> configuration.
 - Enter url on 'Payment Notification Url*' from result url ngrok. And after url from ngrok add your route. For my route api '/api/midtrans/web-notif-hook'.
 
