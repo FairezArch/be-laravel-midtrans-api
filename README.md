@@ -10,7 +10,7 @@
 ## How to run
 
 - Run composer install.
-- Setup
+- Setup .env 
     DB_DATABASE,
     DB_USERNAME,
     DB_PASSWORD, 
