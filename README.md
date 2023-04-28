@@ -23,8 +23,8 @@
 ## How to run Collection API
 - Postman
     - Open Postman.
-    - Open menu collection -> import 'thunder-collection_Collection API_postman.json' -> files.
-    - Open menu environment -> import 'thunder-environment_Trenteran_postman.json' -> files.
+    - Open menu collection -> import -> files -> thunder-collection_Collection API_postman.json.
+    - Open menu environment -> import -> files -> thunder-environment_Trenteran_postman.json.
 
 ## How to run Unit Test
 - Run 'php artisan test'.
