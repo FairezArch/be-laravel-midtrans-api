@@ -76,7 +76,7 @@ class ProductTest extends TestCase
             'name' => $this->faker->word(),
             'price' => $this->faker->numberBetween(5000, 200000),
         ]);
-        $this->json('PUT', 'api/product/1', [
+        $this->json('PUT', 'api/product/'.$product->id, [
             'name' => $this->faker->word(),
             'price' => $this->faker->numberBetween(5000, 200000),
         ], ['Accept' => 'application/json'])
@@ -98,7 +98,7 @@ class ProductTest extends TestCase
             'name' => $this->faker->word(),
             'price' => $this->faker->numberBetween(5000, 200000),
         ]);
-        $this->json('DELETE', 'api/product/'.$product->id.'', [], ['Accept' => 'application/json'])
+        $this->json('DELETE', 'api/product/'.$product->id, [], ['Accept' => 'application/json'])
         ->assertStatus(204);
     }
 }
