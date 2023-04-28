@@ -31,14 +31,15 @@
 
 ## Setup Hook Midtrans
 - Install ngrok | <a href="https://ngrok.com/download" target="_blank">Download Ngrok</a>
-- After finish install, open terminal then enter 'ngrok http 8000'
-- Open midtrans dashboard, then open menu settings -> configuration.
+- After finish install, open terminal then enter 'ngrok http 8000'. 
+- Open midtrans dashboard, then open menu settings -> configuration. | <a href="https://dashboard.sandbox.midtrans.com/settings/vtweb_configuration" target="_blank">Midtrans setting - configuration</a>
 - Enter url on 'Payment Notification Url*' from result url ngrok. And after url from ngrok add your route. For my route api '/api/midtrans/web-notif-hook'.
 
 ## Test VA Bank Midtrans
 - Open link  <a href="https://simulator.sandbox.midtrans.com/bca/va/index" target="_blank">Test VA Bank Midtrans</a>
 - Enter VA number -> Inquire -> then pay for that.
 
-Test support: BCA, BNI, BRI.
+# Test VA support: 
+  - BCA, BNI, BRI.
 
 
