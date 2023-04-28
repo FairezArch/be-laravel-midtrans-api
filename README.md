@@ -11,27 +11,27 @@
 
 - Run composer install.
 - Setup
-- **DB_DATABASE=
-- **DB_USERNAME=
-- **DB_PASSWORD= 
-- **MIDTRANS_MERCHAT_ID=
-- **MIDTRANS_CLIENT_KEY=
-- **MIDTRANS_SERVER_KEY=
+    DB_DATABASE=
+    DB_USERNAME=
+    DB_PASSWORD= 
+    MIDTRANS_MERCHAT_ID=
+    MIDTRANS_CLIENT_KEY=
+    MIDTRANS_SERVER_KEY=
 - Run php artisan migrate --seed.
-- Then run 'php artisan serve'.
+- Then run 'php artisan serve' | http:127.0.0.1:8000.
 
 ## How to run Collection API
 - Postman
-- **Open Postman.
-- **Open menu collection -> import -> files.
-- **Open menu environment -> import -> files.
+    Open Postman.
+    Open menu collection -> import -> files.
+    Open menu environment -> import -> files.
 
 ## How to run Unit Test
 - Run 'php artisan test'.
 
 ## Setup Hook Midtrans
 - Install ngrok | <a href="https://ngrok.com/download" target="_blank">Download Ngrok</a>
-- Open termial, then enter 'ngrok http 8000'
+- After finis install, open terminal then enter 'ngrok http 8000'
 - Open midtrans dashboard, then open menu settings -> configuration.
 - Enter url on 'Payment Notification Url*' from result url ngrok. And after url from ngrok add your route. For my route api '/api/midtrans/web-notif-hook'.
 
