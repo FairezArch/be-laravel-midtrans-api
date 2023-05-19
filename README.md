@@ -17,8 +17,16 @@
     - MIDTRANS_MERCHAT_ID
     - MIDTRANS_CLIENT_KEY
     - MIDTRANS_SERVER_KEY
-- Run php artisan migrate --seed.
-- Then run 'php artisan serve' | http:127.0.0.1:8000.
+- Run artisan migrate
+
+```
+$ php artisan migrate --seed
+```
+
+- Then run artisan serve | http:127.0.0.1:8000.
+```
+$ php artisan serve
+```
 
 ## How to run Collection API
 - Postman
@@ -27,7 +35,11 @@
     - Open menu environment -> import -> files -> thunder-environment_Trenteran_postman.json.
 
 ## How to run Unit Test
-- Run 'php artisan test'.
+- Run artisan test.
+
+```
+$ php artisan test
+```
 
 ## Setup Hook Midtrans
 - Install ngrok | <a href="https://ngrok.com/download" target="_blank">Download Ngrok</a>
